@@ -1,0 +1,93 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.para {
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-content {
+  min-height: 200px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-content:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.start-btn,
+.pause-btn,
+.copy-btn,
+.reset-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.start-btn {
+  background-color: #32a852;
+}
+
+.start-btn:hover {
+  background-color: green;
+}
+
+.pause-btn {
+  background-color: #fca423;
+}
+
+.pause-btn:hover {
+  background-color: #99640f;
+}
+
+.copy-btn {
+  background-color: #0e80d6;
+}
+
+.copy-btn:hover {
+  background-color: #08558f;
+}
+
+.copy-btn.copied {
+  background-color: #0e80d6;
+}
+
+.copy-btn.copied:hover {
+  background-color: #08558f;
+}
+
+.reset-btn {
+  background-color: #f44336;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2a;
+}
