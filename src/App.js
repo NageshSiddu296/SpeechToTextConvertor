@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 import SpeechRecognition, {
-  useSpeechRecognition
+  useSpeechRecognition,
 } from "react-speech-recognition";
 import useClipboard from "react-use-clipboard";
 
@@ -9,11 +9,8 @@ export default function App() {
   const [textToCopy, setTextToCopy] = useState("");
   const [isCopied, setCopied] = useClipboard(textToCopy);
   const [isListeningPaused, setListeningPaused] = useState(false);
-  const {
-    transcript,
-    resetTranscript,
-    browserSupportsSpeechRecognition
-  } = useSpeechRecognition();
+  const { transcript, resetTranscript, browserSupportsSpeechRecognition } =
+    useSpeechRecognition();
 
   const startListening = () => {
     if (isListeningPaused) {

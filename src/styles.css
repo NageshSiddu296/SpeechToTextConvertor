@@ -1,11 +1,18 @@
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
 .container {
-  max-width: 400px;
+  min-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color: #bcbbbb;
   border-radius: 10px;
+  
 }
-
 .title {
   font-size: 28px;
   font-weight: bold;
@@ -23,7 +30,7 @@
   min-height: 200px;
   padding: 10px;
   background-color: #ffffff;
-  border: 1px solid #ddd;
+  border: 1px solid #0b0000;
   border-radius: 4px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -37,6 +44,7 @@
 .btn {
   display: flex;
   justify-content: space-around;
+  gap: 5px;
 }
 
 .start-btn,
@@ -65,7 +73,7 @@
 }
 
 .pause-btn:hover {
-  background-color: #99640f;
+  background-color: #e38d02;
 }
 
 .copy-btn {
@@ -90,4 +98,29 @@
 
 .reset-btn:hover {
   background-color: #d32f2a;
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+  }
+  .btn{
+    flex-direction:column ;
+  }
+}
+
+/* Responsive styles for large screens (768px and above) */
+@media (min-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px;
+  }
+
+  .main-content {
+    min-height: 300px;
+  }
 }
